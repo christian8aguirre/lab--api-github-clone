@@ -2,9 +2,10 @@
   box-sizing: border-box; }
 
 body {
-  margin: 0;
+  margin: 0 auto;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 14px; }
+  font-size: 14px;
+  width: 1026px; }
 
 nav {
   background-color: #eeeeee;
@@ -39,6 +40,7 @@ nav {
   nav .right {
     flex: 1; }
     nav .right .list_nav {
+      justify-content: flex-end;
       height: 100%;
       align-items: center; }
 
@@ -46,7 +48,7 @@ section {
   display: flex;
   flex-direction: column; }
   section .userSection {
-    padding: 4%;
+    padding: 15px;
     flex: 1; }
     section .userSection .imageProfile {
       width: 230px;
@@ -89,16 +91,19 @@ section {
       padding: 0;
       list-style: none; }
       section .userSection .details--list li {
-        margin-top: 3px;
+        margin-top: 10px;
         width: 100%; }
         section .userSection .details--list li i {
-          font-size: 12px;
+          font-size: 18px;
           color: #6a737d; }
+        section .userSection .details--list li a {
+          text-decoration: none;
+          font-weight: 600; }
         section .userSection .details--list li span {
           font-size: 12px; }
   section .optionSection {
     padding: 0 1%;
-    flex: 3; }
+    flex: 5; }
     section .optionSection hr {
       border: 0;
       height: 0;
@@ -188,20 +193,55 @@ section {
         section .optionSection .ui-tabs__content li .repositoryDetails {
           font-size: 12px;
           margin-right: 16px;
-          color: #586069; }
+          color: #586069;
+          padding-bottom: 15px; }
           section .optionSection .ui-tabs__content li .repositoryDetails .space {
             margin-right: 16px; }
             section .optionSection .ui-tabs__content li .repositoryDetails .space a {
               text-decoration: none; }
           section .optionSection .ui-tabs__content li .repositoryDetails .repoLanguage {
-            background-color: #4F5D95;
             top: 1px;
             display: inline-block;
             width: 12px;
             height: 12px;
             border-radius: 50%; }
+          section .optionSection .ui-tabs__content li .repositoryDetails .colorLanguage {
+            background-color: #4F5D95; }
 
-@media screen and (min-width: 300px) {
+.PHP {
+  background-color: #4F5D95; }
+
+.JavaScript {
+  background-color: #f1e05a; }
+
+.HTML {
+  background-color: #e34c26; }
+
+.CSS {
+  background-color: #563d7c; }
+
+.Java {
+  background-color: #b07219; }
+
+.Python {
+  background-color: #3572A5; }
+
+.Shell {
+  background-color: #89e051; }
+
+.Rust {
+  background-color: #dea584; }
+
+.C {
+  background-color: #555555; }
+
+.Cplusplus {
+  background-color: #f34b7d; }
+
+.Ruby {
+  background-color: #701516; }
+
+@media screen and (min-width: 600px) {
   nav {
     padding: 2px 0;
     flex-direction: row; }
