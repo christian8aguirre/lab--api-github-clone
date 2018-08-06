@@ -67,9 +67,9 @@ function getRepositories(user) {
       .then(function(response) {
         var repositories = response.body;
         repositories = orderRepositoriesByDate(repositories);
-        filterRespositories.addEventListener('keydown',function (e) {
-          var ENTER_KEY = 13;
-          if (e.keyCode === ENTER_KEY){
+        // filterRespositories.addEventListener('keydown',function (e) {
+        //   var ENTER_KEY = 13;
+        //   if (e.keyCode === ENTER_KEY){
             ul.innerHTML ='';
             var template ='';
             repositories.forEach(function (repository) {
@@ -83,8 +83,8 @@ function getRepositories(user) {
               template = createTemplate(object);
               ul.innerHTML += template;
               ul.appendChild(hr);
-            })
-          }
+          //   })
+          // }
       })
   })
 }
